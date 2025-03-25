@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: royalblue;
+    font-family: sans-serif;
+    transition: 1s ease;
+  }
+  
+  /* container externo para centralizar tudo */
+  div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* container principal do contador */
+  #conteudo {
+    background: rgb(66, 64, 64);
+    width: 300px; /* largura fixa */
+    padding: 20px;
+    border: 5px solid rgb(54, 54, 54);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  h1 {
+    font-size: 30px;
+    color: white;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 1px black;
+    cursor: not-allowed;
+  }
+  
+  /* container dos botões com flexbox */
+  #botoes {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+  
+  /* estilos dos botões */
+  button {
+    font-size: 30px;
+    padding: 10px 20px;
+    border: none;
+    background-color: rgb(49, 47, 47);
+    color: white;
+    cursor: pointer;
+    border: 2px solid rgb(40, 41, 39);
+    border-radius: 5px;
+    transition: background-color 0.5s ease, box-shadow 0.2s ease, border 0.2s ease, border-radius 1s ease;
+  }
+  button:active{
+    transform: scale(0.8);
+    border: solid white;
+    text-shadow: none;
+    border-radius: 20px;
+  }
+  
+  /* efeitos hover para botões */
+  #menos:hover {
+    background-color: red;
+    box-shadow: 1px 1px 30px red;
+    color: black;
+  }
+  
+  #mais:hover {
+    background-color: yellow;
+    box-shadow: 1px 1px 30px yellow;
+    color: black;
+  }
+  
+  /* exibição do contador */
+  #principal {
+    font-size: 40px;
+    color: white;
+    margin: 0 10px;
+    text-shadow: 1px 1px 1px black;
+    cursor: not-allowed;
+  }
+
+
+  /* trasition do h1 e p */
